@@ -1,2 +1,2 @@
 # MPPL
-Repo untuk menyimpan proyek akhir MPPL
+Proyek Aplikasi Keamanan Transaksi Ekspor-Impor Ikan (simulasi)
