@@ -22,6 +22,26 @@ if ($result->num_rows > 0) {
     <div class="detail-info">
         <h1><?= htmlspecialchars($wisata['nama_wisata']) ?></h1>
         <p class="location"><?= htmlspecialchars($wisata['lokasi']) ?></p>
+        
+        <!-- Tampilkan Jadwal Operasional dari JSON -->
+        <?php 
+        if (!empty($wisata['jadwal_operasional'])) {
+            $jadwal = json_decode($wisata['jadwal_operasional'], true);
+            if(is_array($jadwal)) {
+                $hari_map = [
+                    'setiap_hari' => 'Setiap Hari',
+                    'senin_jumat' => 'Senin - Jumat',
+                    'sabtu_minggu' => 'Sabtu - Minggu'
+                ];
+                $hari_teks = $hari_map[$jadwal['days']] ?? '';
+                echo "<p><strong>Jadwal Operasional:</strong> " . htmlspecialchars($hari_teks . ': ' . $jadwal['open'] . ' - ' . $jadwal['close']) . "</p>";
+            } else {
+                // Fallback jika data lama bukan JSON
+                echo "<p><strong>Jadwal Operasional:</strong> " . htmlspecialchars($wisata['jadwal_operasional']) . "</p>";
+            }
+        } 
+        ?>
+
         <p class="price-detail">Harga Tiket: <strong>Rp <?= number_format($wisata['harga_tiket'], 0, ',', '.') ?> / orang</strong></p>
         <h3>Deskripsi</h3>
         <p><?= nl2br(htmlspecialchars($wisata['deskripsi'])) ?></p>

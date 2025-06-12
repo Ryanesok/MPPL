@@ -42,6 +42,11 @@ $pemesanan_terakhir = $conn->query($sql_pemesanan);
 </div>
 
 <div class="management-section">
+    <h3>Menu Pengelolaan</h3>
+    <a href="index.php?page=admin_kelola_wisata" class="btn">Kelola Data Objek Wisata</a>
+</div>
+
+<div class="management-section">
     <h3>5 Pemesanan Terakhir</h3>
     <table class="data-table">
         <thead>
