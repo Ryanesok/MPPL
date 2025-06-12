@@ -25,6 +25,12 @@ switch ($page) {
     case 'admin_dashboard':
         include 'pages/admin-dashboard.php';
         break;
+    case 'admin_kelola_wisata':
+        include 'pages/admin-kelolawisata.php';
+        break;
+    case 'admin_form_wisata':
+        include 'pages/admin-formwisata.php';
+        break;
     case 'dinas_dashboard':
         include 'pages/dinas-dashboard.php';
         break;

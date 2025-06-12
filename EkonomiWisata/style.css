@@ -358,3 +358,31 @@ footer {
     background-color: #e9ecef;
     color: #555;
 }
+
+.btn-action {
+    padding: 0.4rem 0.8rem;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    margin-right: 5px;
+}
+.btn-edit {
+    background-color: #ffc107; /* Kuning */
+    color: #333;
+}
+.btn-edit:hover {
+    background-color: #e0a800;
+}
+.btn-delete {
+    background-color: #dc3545; /* Merah */
+}
+.btn-delete:hover {
+    background-color: #c82333;
+}
+.btn-primary {
+    background-color: #2a6fdb;
+}
+.btn-primary:hover {
+    background-color: #1e5a9b;
+}
