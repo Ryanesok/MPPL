@@ -1,0 +1,9 @@
+// Ini adalah contoh Peran dalam tim
+Nama : Ay oni ma
+Peran : Owner
+email : awkaowaokwao@gmail.com
+no telp : 000101910100101
+Deskripsi peran :
+      - Penyedia repo untuk tim
+      - pemberi nasihat untuk tim
+      - dll
