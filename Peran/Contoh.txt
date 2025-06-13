@@ -1,9 +1,11 @@
-// Ini adalah contoh Peran dalam tim
-Nama : Ay oni ma
-Peran : Owner
-email : awkaowaokwao@gmail.com
-no telp : 000101910100101
+//
+Nama       : Galih Fathurahman A
+Peran      : Quality Assurance
+Saya bertanggung jawab untuk memastikan bahwa produk atau layanan yang dikembangkan memenuhi standar kualitas yang ditentukan. 
+
 Deskripsi peran :
-      - Penyedia repo untuk tim
-      - pemberi nasihat untuk tim
-      - dll
+      - Melakukan pengujian
+      - Melaporkan bug
+      - Verifikasi perbaikan
+      - Menungkatkan proses
+      - Membantu memberi saran dan bisa juga merubah desain/coding jika dirasa kurang cocok, tentunya dengan persetujuan semua anggota
