@@ -15,6 +15,18 @@ if ($result->num_rows > 0) {
     echo "Objek wisata tidak ditemukan.";
     exit;
 }
+
+$gambar_default = htmlspecialchars($wisata['gambar_url']);
+$nama = strtolower($wisata['nama_wisata']);
+if (strpos($nama, 'borobudur') !== false) {
+    $gambar = "https://cpanel-blog.smsperkasa.com/wp-content/uploads/2023/09/Tata-Letak-dan-Bentuk-Candi-Borobudur-1024x683.jpg";
+} elseif (strpos($nama, 'parangtritis') !== false) {
+    $gambar = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Parangtritis_Beach_2011_2.JPG/960px-Parangtritis_Beach_2011_2.JPG";
+} elseif (strpos($nama, 'bromo') !== false) {
+    $gambar = "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Mount_Bromo_East_Java.jpg/960px-Mount_Bromo_East_Java.jpg";
+} else {
+    $gambar = $gambar_default;
+}
 ?>
 
 <div class="detail-container">
